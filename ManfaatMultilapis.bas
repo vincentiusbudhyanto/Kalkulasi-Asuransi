@@ -66,3 +66,15 @@ Galat:
     
 Keluar:
 End Function
+
+Private Sub Uji_Hitung_MultiLapis()
+
+    AkumulasiKlaim = 10000000
+    LapisanManfaat = Array(9000000, 2000000)
+    KlaimTerakhir = 3000000
+    
+    
+    Hitung = Hitung_MultiLapis(AkumulasiKlaim, LapisanManfaat, KlaimTerakhir)
+    
+End Sub
+
