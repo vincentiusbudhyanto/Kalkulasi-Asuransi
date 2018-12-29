@@ -1,4 +1,3 @@
-
 Function Hitung_MultiLapis(ByVal AkumulasiKlaim As Double, ByVal LapisanManfaat As Variant, Optional ByVal KlaimTerakhir As Double) As Variant
     
     ReDim SisaManfaat(UBound(LapisanManfaat))
