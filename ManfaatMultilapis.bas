@@ -1,3 +1,4 @@
+
 Function Hitung_MultiLapis(ByVal AkumulasiKlaim As Double, ByVal LapisanManfaat As Variant, Optional ByVal KlaimTerakhir As Double) As Variant
     
     ReDim SisaManfaat(UBound(LapisanManfaat))
@@ -34,7 +35,6 @@ Function Hitung_MultiLapis(ByVal AkumulasiKlaim As Double, ByVal LapisanManfaat 
                         SisaManfaat(i) = SisaManfaat(i) - KlaimTerakhir
                         KlaimTerakhir = 0
                         TagihanManfaat(i) = KlaimTerakhir
-                        GoTo Selesai
                         
                     Case Sisa <= 0
                         TagihanManfaat(i) = SisaManfaat(i)
@@ -70,11 +70,9 @@ End Function
 Private Sub Uji_Hitung_MultiLapis()
 
     AkumulasiKlaim = 10000000
-    LapisanManfaat = Array(9000000, 2000000)
+    LapisanManfaat = Array(9000000, 2000000, 5000000, 2000000)
     KlaimTerakhir = 3000000
-    
     
     Hitung = Hitung_MultiLapis(AkumulasiKlaim, LapisanManfaat, KlaimTerakhir)
     
 End Sub
-
